@@ -7,7 +7,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   --ink: #243b36;
   --muted: #74807a;
@@ -25,12 +25,12 @@ body {
   margin: 0;
   background-color: var(--paper);
   background-image:
-    linear-gradient(to right, #b6d8e255 1px, transparent 1px),
-    linear-gradient(to bottom, #b6d8e255 1px, transparent 1px),
-    linear-gradient(to right, #a5cddd77 1px, transparent 1px),
-    linear-gradient(to bottom, #a5cddd77 1px, transparent 1px),
-    linear-gradient(to right, #8bb9ca99 1px, transparent 1px),
-    linear-gradient(to bottom, #8bb9ca99 1px, transparent 1px);
+    linear-gradient(to right, #b6d8e233 1px, transparent 1px),
+    linear-gradient(to bottom, #b6d8e233 1px, transparent 1px),
+    linear-gradient(to right, #a5cddd44 1px, transparent 1px),
+    linear-gradient(to bottom, #a5cddd44 1px, transparent 1px),
+    linear-gradient(to right, #8bb9ca66 1px, transparent 1px),
+    linear-gradient(to bottom, #8bb9ca66 1px, transparent 1px);
   background-size: 5px 5px, 5px 5px, 25px 25px, 25px 25px, 100px 100px, 100px 100px;
 }
 
