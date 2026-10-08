@@ -1,0 +1,42 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #243b36;
+  background: #fbfcfa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  letter-spacing: 0;
+  --ink: #243b36;
+  --muted: #74807a;
+  --paper: #fbfcfa;
+  --coral: #397d98;
+  --green: #416a59;
+  --line: #dfded5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, #b6d8e255 1px, transparent 1px),
+    linear-gradient(to bottom, #b6d8e255 1px, transparent 1px),
+    linear-gradient(to right, #a5cddd77 1px, transparent 1px),
+    linear-gradient(to bottom, #a5cddd77 1px, transparent 1px),
+    linear-gradient(to right, #8bb9ca99 1px, transparent 1px),
+    linear-gradient(to bottom, #8bb9ca99 1px, transparent 1px);
+  background-size: 5px 5px, 5px 5px, 25px 25px, 25px 25px, 100px 100px, 100px 100px;
+}
+
+button, input { font: inherit; }
+button { color: inherit; }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: none; }
+button:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+
+#root { min-height: 100vh; }
