@@ -360,9 +360,17 @@ function App() {
                 <input
                   aria-label="Your answer"
                   autoComplete="off"
-                  disabled={feedback !== null}
+                  enterKeyHint={feedback ? 'next' : 'done'}
                   inputMode="numeric"
-                  onChange={(event) => setAnswer(event.target.value.replace(/[^0-9]/g, '').slice(0, 3))}
+                  onChange={(event) => {
+                    if (!feedback) setAnswer(event.target.value.replace(/[^0-9]/g, '').slice(0, 3))
+                  }}
+                  onKeyDown={(event) => {
+                    if (event.key !== 'Enter') return
+                    event.preventDefault()
+                    if (feedback) nextQuestion()
+                    else event.currentTarget.form?.requestSubmit()
+                  }}
                   placeholder="?"
                   ref={answerInputRef}
                   value={answer}
